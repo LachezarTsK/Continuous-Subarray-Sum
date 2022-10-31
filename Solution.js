@@ -16,7 +16,6 @@ var checkSubarraySum = function (input, target) {
         }
         previousPrefixSumModuloTarget.add(previousSum % target);
         previousSum = currentSum;
-
     }
     return false;
 };
