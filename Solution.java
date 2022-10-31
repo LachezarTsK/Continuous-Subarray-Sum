@@ -2,7 +2,6 @@
 public class Solution {
 
     public boolean checkSubarraySum(int[] input, int target) {
-
         Set<Integer> previousPrefixSumModuloTarget = new HashSet<>();
         int previousSum = 0;
         int currentSum = 0;
@@ -14,7 +13,6 @@ public class Solution {
             }
             previousPrefixSumModuloTarget.add(previousSum % target);
             previousSum = currentSum;
-
         }
         return false;
     }
